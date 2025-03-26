@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img\logo.png">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form class="form-cadastro" method="post">
+        <fieldset class="grupo-info">
+            <legend>Informações Pessoais</legend>
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" size="42" maxlength="50" placeholder="Digite seu nome completo">
+            </div>
+
+            <div class="campo">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" size="42" maxlength="100" placeholder="Rua, número, complemento">
+            </div>
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" size="42" maxlength="100" placeholder="seuemail@exemplo.com">
+            </div>
+
+            <div class="campo-duplo">
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" size="13" maxlength="15" placeholder="(XX) XXXXX-XXXX">
+                </div>
+
+                <div class="campo">
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo-formacao">
+            <legend>Formação e Gênero</legend>
+            <div class="campo">
+                <label for="formacao">Formação:</label>
+                <select id="formacao" name="formacao">
+                    <option value="">Selecione</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="superior">Ensino Superior</option>
+                    <option value="tecnico">Ensino Técnico</option>
+                </select>
+            </div>
+
+            <div class="campo-radio">
+                <span>Gênero:</span>
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino">Feminino</label>
+
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="outros" name="sexo" value="outros">
+                <label for="outros">Outros</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo-observacao">
+            <legend>Observação</legend>
+            <div class="campo">
+                <label for="observacao">Observação:</label>
+                <textarea id="observacao" name="observacao" rows="10" cols="50" placeholder="Alguma observação?"></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
